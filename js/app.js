@@ -80,10 +80,67 @@ Note: If the number is a multiple of both 3 and 5, only count it once.
     /*/
     Bob needs a fast way to calculate the volume of a rectangular cuboid with three values: the length, width and height of the cuboid.
     /*/
-    class Kata {
-  static getVolumeOfCuboid(length, width, height) {
-    let volume = length * width * height
-  return volume
-  } 
+//     class Kata {
+//   static getVolumeOfCuboid(length, width, height) {
+//     let volume = length * width * height
+//   return volume
+//   } 
 }
+/*/
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+/*/
+// function highAndLow(n){
+//    let sort2 = n.split(" ").sort( (a,b) => a - b ).at(-1)
+//    let sort1 = n.split(" ").sort( (a,b) => b - a ).at(-1)
+//    return `${sort1} ${sort2}`
+//    console.log( highAndLow("1 2 3 4 5"));// return "5 1" 
+// }
+{
+    /*/
+    Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+/*/
+//     function sumTwoSmallestNumbers(n) {  
+//    return `${Number(n.sort( (a,b) => b - a ).slice(-2).reduce((sum,num) => sum + num ))}`
+   
+// }
+// console.log( sumTwoSmallestNumbers([19, 5, 42, 2, 77]) );
+}
+{
+    /*/
+    Sum all the numbers of a given array ( cq. list ), except the highest and the lowest element ( by value, not by index! ).The highest or lowest element respectively is a single element at each edge, even if there are more than one with the same value.
+Mind the input validation.
+/*/
+// function sumArray(array) {
+//   if ( array == null|| array.length == 0 || array.length == 1 || array == 2) return 0
+// return array.sort( (a,b) => a - b ).slice(1,-1).reduce( (sum,value) => sum + value, 0)
+  
+// } 
+// console.log( sumArray([6, 2, 1, 8, 10]) );
+
+}
+{
+
+}
+{
+    /*/
+    Define a method hello that returns "Hello, Name!" to a given name, or says Hello, World! if name is not given (or passed as an empty String).
+
+Assuming that name is a String and it checks for user typos to return a name with a first capital letter (Xxxx).
+
+Examples:
+
+* With `name` = "john"  => return "Hello, John!"
+/*/
+//     function hello(name) {
+//   if( name == undefined ||name == null || name == "" ){
+//     return "Hello, World!"
+//   } else{
+//     let part1 = name.toLowerCase().slice(0,1).toUpperCase()
+//     let part2 = name.slice(1)
+//     return `Hello, ${part1}${part2}!`
+//   }
+// }
+// console.log( hello("john") );
+
 }
